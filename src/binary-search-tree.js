@@ -49,11 +49,12 @@ class BinarySearchTree {
           // recurse with this.value.left
         // else return false;
       //
+      // REFACTOR WITH SOME TERNARYS
       if (this.value === t) return true; // base case
 
       if (t < this.value) { // smaller than top of tree GO LEFT
         if (this.left) {
-          return this.left.contains(t);
+          return this.left.contains(t); // works back up the chain or tree
         }
         return false;
       }   // bigger than top of tree GO RIGHT
