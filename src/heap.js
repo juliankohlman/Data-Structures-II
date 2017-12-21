@@ -6,6 +6,10 @@ class Heap {
     }
     // Inserts the given value in the heap
     // Calls bubbleUp in order to put the newly-inserted element in the right place in the heap
+
+    // left child: i * 2
+    // right child: i * 2 + 1
+    // parent: i / 2
     insert(val) {
 
     }
@@ -27,7 +31,7 @@ class Heap {
     getStorage() {
 
     }
-    // Moves the element at the specified index "up" by swapping it with its parent 
+    // Moves the element at the specified index "up" by swapping it with its parent
     // if its parent value is less than the value located at the input index
     // This method is only used by the heap itself in order to maintain the heap property
     bubbleUp(index) {
@@ -37,7 +41,7 @@ class Heap {
     // If the larger of the child elements is larger than the parent, the child element is swapped with the parent
     // This method is only used by the heap itself in order to maintain the heap property
     siftDown(index) {
-      
+
     }
 }
 
